@@ -1,1 +1,1 @@
-c:\users\sebas\documents\visual studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\bin\Debug\SiebzehnundVier.exe.config
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\bin\Debug\SiebzehnundVier.exe.config

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SiebzehnundVier
 {
-    public partial class Form1 : Form
+    public partial class frmSuV : Form
     {
-        public Form1()
+        public frmSuV()
         {
             InitializeComponent();
         }
