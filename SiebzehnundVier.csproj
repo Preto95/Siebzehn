@@ -53,6 +53,7 @@
     <Compile Include="frmSuV.Designer.cs">
       <DependentUpon>frmSuV.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmSuV.resx">
