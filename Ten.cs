@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SiebzehnundVier
 {
-    class ImageCard : Card
+    class Ten : Card
     {
-        public ImageCard(Image cardImage) : base(cardImage)
+        public Ten(Image cardImage, Color color) : base(cardImage, color)
         {
-
+            base.PointS = Points.Zehn;
         }
     }
 }

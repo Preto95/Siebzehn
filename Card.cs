@@ -9,17 +9,17 @@ namespace SiebzehnundVier
 {
     abstract class Card
     {
-        protected Image cardImage;   //object for the Card-View
+        public Image CardImage { protected set; get; }
+        public Color Color { protected set; get; }
+        public Points PointS { protected set; get; }
 
-        public Card(Image cardImage)
+        public Card(Image cardImage, Color color)
         {
-            this.cardImage = cardImage;
+            this.CardImage = cardImage;
+            this.Color = color;
         }
-        
-        public Image CardImage
-        {
-            private set { cardImage = value; }
-            get { return cardImage; }
-        }
+
+
+
     }
 }
