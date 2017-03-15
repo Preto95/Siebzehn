@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.IO;
 
 namespace SiebzehnundVier
 {
@@ -13,9 +14,10 @@ namespace SiebzehnundVier
         public Color Color { protected set; get; }
         public Points PointS { protected set; get; }
 
-        public Card(Image cardImage, Color color)
+        public Card(Image cardImage, Points points, Color color)
         {
             this.CardImage = cardImage;
+            this.PointS = points;
             this.Color = color;
         }
 
@@ -136,14 +138,68 @@ namespace SiebzehnundVier
             return pointsofDecks;
         }
 
-        //public void deinemudda(params Card[] tmp)
-        //{
-        //    tmp[0].lst.
-        //}
-
-        public static List<Card> GenerateDecks(int playerCount)
+        public void LoadCards()
         {
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Eight);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Jack);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_King);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Nine);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Queen);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Seven);
+            Settings.dic.Add(Skat.Properties.Resources.Cross_Ten);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Ass);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Eight);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Jack);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_King);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Nine);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Queen);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Seven);
+            Settings.dic.Add(Skat.Properties.Resources.Diamond_Ten);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Ass);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Eight);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Jack);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_King);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Nine);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Queen);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Seven);
+            Settings.dic.Add(Skat.Properties.Resources.Heart_Ten);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Ass);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Eight);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Jack);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_King);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Nine);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Queen);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Seven);
+            Settings.dic.Add(Skat.Properties.Resources.Piek_Ten);
 
+            //public static List<Card> GenerateCards()
+            //{
+            //    List<Card> lstCards = new List<Card>(33);
+
+            //    Directory.SetCurrentDirectory(@"..\..\Skat\Cards\Playing Cards\PNG-cards-1.3");
+
+            //    int i = 2;
+            //    while(i <= (int)Points.Ass)
+            //    {
+            //        int j = 0;
+            //        while(j <= 3)
+            //        {
+            //            lstCards.Add(new Card(Color.ToString()))
+            //        }
+
+            //        if (i == 4)
+            //            i += 3;
+            //        else
+            //            i++;
+            //    }
+            ////    lstCards.Add(new Card(Image.FromFile("Herz_Sieben.png"), Points.Seven, Color.Herz));
+            ////    lstCards.Add(new Card(Image.FromFile("Karo_Sieben.png"), Points.Seven, Color.Karo));
+            ////    lstCards.Add(new Card(Image.FromFile("Piek_Sieben.png"), Points.Seven, Color.Piek));
+            ////    lstCards.Add(new Card(Image.FromFile("Kreuz_Sieben.png"), Points.Seven, Color.Kreuz));
+            ////    lstCards.Add(new Card(Image.FromFile("Herz_Acht.png"), Points.Eight, Color.Herz));
+            ////    lstCards.Add(new Card(Image.FromFile("Karo_Acht.png"), Points.Eight, Color.Karo));
+            ////    lstCards.Add(new Card(Image.FromFile("Piek_Acht.png"), Points.Eight, Color.Piek));
+            ////    lstCards.Add(new Card(Image.FromFile("Herz_Acht.png"), Points.Eight, Color.Herz));
+            //}
         }
-    }
 }

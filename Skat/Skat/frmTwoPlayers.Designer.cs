@@ -52,6 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblLimit = new System.Windows.Forms.Label();
             this.lbProtocol = new System.Windows.Forms.ListBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picYourself)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picOpponent)).BeginInit();
             this.panMinimizedChat.SuspendLayout();
@@ -74,6 +75,7 @@
             this.picOpponent.Location = new System.Drawing.Point(265, 12);
             this.picOpponent.Name = "picOpponent";
             this.picOpponent.Size = new System.Drawing.Size(100, 150);
+            this.picOpponent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picOpponent.TabIndex = 0;
             this.picOpponent.TabStop = false;
             // 
@@ -326,6 +328,16 @@
             this.lbProtocol.Size = new System.Drawing.Size(300, 112);
             this.lbProtocol.TabIndex = 14;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(222, 164);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // frmTwoPlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -333,6 +345,7 @@
             this.BackgroundImage = global::Skat.Properties.Resources.bg_berlin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(834, 562);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.lbProtocol);
             this.Controls.Add(this.grpCommitment);
             this.Controls.Add(this.button2);
@@ -391,5 +404,6 @@
         private System.Windows.Forms.Button btnSet;
         private System.Windows.Forms.TextBox tbCommitment;
         private System.Windows.Forms.ListBox lbProtocol;
+        private System.Windows.Forms.Button button3;
     }
 }

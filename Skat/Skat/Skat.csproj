@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
-    <Compile Include="Color.cs" />
     <Compile Include="frmFourPlayers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +119,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\PlayCards\Cross_Eight.png" />
+    <Content Include="Resources\PlayCards\Cross_Jack.png" />
+    <Content Include="Resources\PlayCards\Cross_King.png" />
+    <Content Include="Resources\PlayCards\Cross_Nine.png" />
+    <Content Include="Resources\PlayCards\Cross_Queen.png" />
+    <Content Include="Resources\PlayCards\Cross_Seven.png" />
+    <Content Include="Resources\PlayCards\Cross_Ten.png" />
+    <Content Include="Resources\PlayCards\Diamond_Ass.png" />
+    <Content Include="Resources\PlayCards\Diamond_Eight.png" />
+    <Content Include="Resources\PlayCards\Diamond_Jack.png" />
+    <Content Include="Resources\PlayCards\Diamond_King.png" />
+    <Content Include="Resources\PlayCards\Diamond_Nine.png" />
+    <Content Include="Resources\PlayCards\Diamond_Queen.png" />
+    <Content Include="Resources\PlayCards\Diamond_Seven.png" />
+    <Content Include="Resources\PlayCards\Diamond_Ten.png" />
+    <Content Include="Resources\PlayCards\Heart_Ass.png" />
+    <Content Include="Resources\PlayCards\Heart_Eight.png" />
+    <Content Include="Resources\PlayCards\Heart_Jack.png" />
+    <Content Include="Resources\PlayCards\Heart_King.png" />
+    <Content Include="Resources\PlayCards\Heart_Nine.png" />
+    <Content Include="Resources\PlayCards\Heart_Queen.png" />
+    <Content Include="Resources\PlayCards\Heart_Seven.png" />
+    <Content Include="Resources\PlayCards\Heart_Ten.png" />
+    <Content Include="Resources\PlayCards\Piek_Ass.png" />
+    <Content Include="Resources\PlayCards\Piek_Eight.png" />
+    <Content Include="Resources\PlayCards\Piek_Jack.png" />
+    <Content Include="Resources\PlayCards\Piek_King.png" />
+    <Content Include="Resources\PlayCards\Piek_Nine.png" />
+    <Content Include="Resources\PlayCards\Piek_Queen.png" />
+    <Content Include="Resources\PlayCards\Piek_Seven.png" />
+    <Content Include="Resources\PlayCards\Piek_Ten.png" />
     <None Include="Resources\bg-berlin.jpg" />
     <None Include="Resources\1489503396_mail-icon.ico" />
     <None Include="Resources\1489503553_mail-icon.png" />

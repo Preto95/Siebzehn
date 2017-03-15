@@ -13,8 +13,8 @@ namespace Skat
     public partial class frmTwoPlayers : Form
     {
         #region Fields
-        List<PanelPlayerInfo> lstPPI = new List<PanelPlayerInfo>();
-        List<PanelChat> lstPC = new List<PanelChat>();
+        List<PanelPlayerInfo> lstPPI;
+        List<PanelChat> lstPC;
         Random random;
         #endregion
 
@@ -42,6 +42,9 @@ namespace Skat
 
         private void frmTwoPlayers_Load(object sender, EventArgs e)
         {
+            lstPPI = new List<PanelPlayerInfo>();
+            lstPC = new List<PanelChat>();
+            Settings.PlayCards = new List<Card>();
             if (Settings.StringInput == null || Settings.StringInput == string.Empty)
                 Settings.StringInput = "Anonymous";
             switch(Mode)
@@ -288,8 +291,28 @@ namespace Skat
             if(Convert.ToDouble(tbCommitment.Text) > 0)
             {
                 grpCommitment.Enabled = false;
-
+                lblPot.Text = Convert.ToString(Convert.ToDouble(lblPot.Text.Substring(0, lblPot.Text.Length - 1)) + Convert.ToDouble(tbCommitment.Text)) + "€";
+                for (int i = 0; i < lstPPI.Count; i++)
+                {
+                    string[] Name = lstPPI[i].rtbPlayerInfo.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+                    if (!Name[0].ToLower().Contains("bank"))
+                    {
+                        Name[1] = Name[1].Replace("Balance: ", "");
+                        Name[1] = "Balance: " + Convert.ToString(Convert.ToDouble(Name[1].Substring(0, Name[1].Length - 1)) - Convert.ToDouble(tbCommitment.Text)) + "€";
+                        lstPPI[i].rtbPlayerInfo.Text = Name[0] + "\n" + Name[1];
+                        break;
+                    }
+                }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Settings.dic = new List<Image>();
+            picOpponent.Visible = true;
+            Card c = new Card();
+            c.LoadCards();
+            picOpponent.Image = Settings.dic[random.Next(0, Settings.dic.Count)];
         }
     }
 }

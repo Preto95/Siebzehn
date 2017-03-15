@@ -8,7 +8,7 @@ namespace SiebzehnundVier
 {
     enum Color
     {
-        Pik,
+        Piek,
         Herz,
         Karo,
         Kreuz
