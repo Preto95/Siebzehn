@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="frmFourPlayers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +83,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Player.cs" />
+    <Compile Include="Points.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />

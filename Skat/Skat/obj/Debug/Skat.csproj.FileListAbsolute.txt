@@ -20,3 +20,14 @@ E:\Desktop\Skat\Skat\obj\Debug\Skat.Properties.Resources.resources
 E:\Desktop\Skat\Skat\obj\Debug\Skat.csproj.GenerateResource.Cache
 E:\Desktop\Skat\Skat\obj\Debug\Skat.frmStringInput.resources
 C:\Users\Rene\Desktop\Schule\Programmieren\Skat\Skat\obj\Debug\Skat.frmStringInput.resources
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\bin\Debug\Skat.exe.config
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.exe
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.pdb
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\bin\Debug\Skat.exe
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\bin\Debug\Skat.pdb
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.csprojResolveAssemblyReference.cache
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.frmMainMenu.resources
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.frmStringInput.resources
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.frmTwoPlayers.resources
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.Properties.Resources.resources
+C:\Users\sebas\Documents\Visual Studio 2015\Projects\SiebzehnundVier\SiebzehnundVier\Skat\Skat\obj\Debug\Skat.csproj.GenerateResource.Cache
